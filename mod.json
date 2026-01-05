@@ -11,10 +11,11 @@
     "version": "v1.0.0",
     "developer": "Adriann",
     "description": "Recreating the legendary 16% fail atmosphere of the former Top 1, Tartarus.",
+    "tags": ["joke"],
     "resources": {
         "files": [
-            "cat.png",
-            "kabum.mp3"
+            "resources/cat.png",
+            "resources/kabum.mp3"
         ]
     }
-}
+}   
