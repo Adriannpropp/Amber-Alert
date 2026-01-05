@@ -1,0 +1,20 @@
+{
+    "geode": "4.10.0",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074",
+        "ios": "2.2074"
+    },
+    "id": "adriann.amber-alert",
+    "name": "Amber Alert",
+    "version": "v1.0.0",
+    "developer": "Adriann",
+    "description": "Recreating the legendary 16% fail atmosphere of the former Top 1, Tartarus.",
+    "resources": {
+        "files": [
+            "cat.png",
+            "kabum.mp3"
+        ]
+    }
+}
