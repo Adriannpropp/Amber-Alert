@@ -8,14 +8,22 @@
     },
     "id": "adriann.amber-alert",
     "name": "Amber Alert",
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "developer": "Adriann",
-    "description": "Recreating the legendary 16% fail atmosphere of the former Top 1, Tartarus.",
+    "description": "Recreating the legendary 16% fail of the former Top 1, Tartarus.",
     "tags": ["joke"],
     "resources": {
         "files": [
             "resources/cat.png",
             "resources/kabum.mp3"
         ]
+    },
+    "settings": {
+        "show-cat": {
+            "type": "bool",
+            "name": "Show Cat Image",
+            "description": "Display the cat image when the amber alert plays",
+            "default": true
+        }
     }
-}   
+}

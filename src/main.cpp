@@ -40,21 +40,23 @@ class $modify(AmberPlayLayer, PlayLayer) {
                 }
             }
 
-            auto cat = CCSprite::create((resDir / "cat.png").string().c_str());
-            if (cat) {
-                auto size = CCDirector::get()->getWinSize();
-                cat->setPosition({size.width / 2, size.height / 2});
-                cat->setOpacity(0); 
-                cat->setZOrder(9999); 
-                this->addChild(cat);
+            if (Mod::get()->getSettingValue<bool>("show-cat")) {
+                auto cat = CCSprite::create((resDir / "cat.png").string().c_str());
+                if (cat) {
+                    auto size = CCDirector::get()->getWinSize();
+                    cat->setPosition({size.width / 2, size.height / 2});
+                    cat->setOpacity(0); 
+                    cat->setZOrder(9999); 
+                    this->addChild(cat);
 
-                cat->runAction(CCSequence::create(
-                    CCFadeIn::create(0.1f),
-                    CCDelayTime::create(1.7f),
-                    CCFadeOut::create(0.1f),
-                    CCCallFunc::create(cat, callfunc_selector(CCNode::removeFromParent)),
-                    nullptr
-                ));
+                    cat->runAction(CCSequence::create(
+                        CCFadeIn::create(0.1f),
+                        CCDelayTime::create(1.7f),
+                        CCFadeOut::create(0.1f),
+                        CCCallFunc::create(cat, callfunc_selector(CCNode::removeFromParent)),
+                        nullptr
+                    ));
+                }
             }
         }
     }
